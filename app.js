@@ -1,5 +1,3 @@
-    'use strict';
-
     let allEmployee = [];
     //Constructor:
     function Employee(id, Fname, department, level, img, salary) {
