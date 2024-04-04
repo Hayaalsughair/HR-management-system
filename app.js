@@ -1,4 +1,4 @@
-"user streak";
+"use strick";
 
     let allEmployee = [];
     //Constructor:
@@ -15,7 +15,7 @@
 
     //Methods:
 
-    //calcualte salary prototype 
+    //calcualte salary prototype
     Employee.prototype.calculateSalary = function () {
         let minSalary, maxSalary;
         switch (this.level) {
