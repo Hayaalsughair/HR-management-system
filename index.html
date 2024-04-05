@@ -7,11 +7,11 @@
 
     <!-- Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- Google Font-->
     <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100..800&family=Geologica:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap">
+        href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100..800&family=Geologica:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap">
 
     <!--CSS File -->
     <link rel="stylesheet" href="/styling.css">
@@ -24,7 +24,7 @@
 
 <body>
     <!--    ======= Hedar ======== -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,31 +37,62 @@
             </div>
         </div>
     </nav>
-    
-    <!-- ======= Employee Table ========= -->
-    <div class="tableContent">
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Department</th>
-                    <th>Level</th>
-                    <th>Salary</th>
-                </tr>
-            </thead>
-            <tbody id="employeeTableBody">
-                <!-- Employee data will be inserted here dynamically -->
-            </tbody>
-        </table>
+    <!-- ================================= Employee Form ================================ -->
+    <div class="container">
+        <form id="formId">
+            <fieldset>
+                <legend class="employeeForm">Employee Form</legend> <br><br>
+                <!-- Text input name -->
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" id="fullName" class="form-control"
+                        placeholder="please enter your full name in english">
+                </div>
+                <!-- first selection -->
+                <div class="mb-3">
+                    <label for="selectDepartment" class="form-label">Select Your Department</label>
+                    <select id="selectDepartment" class="form-select">
+                        <option value="Administration">Administration</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Development">Development</option>
+                        <option value="Finance">Finance</option>
+                    </select>
+                </div>
+                <!-- second selection -->
+                <div class="mb-3">
+                    <label for="selectLevel" class="form-label">Select Your Level</label>
+                    <select id="selectLevel" class="form-select">
+                        <option value="Junior">Junior</option>
+                        <option value="Mid-Senior">Mid-Senior</option>
+                        <option value="Senior">Senior</option>
+                    </select>
+                </div>
+                <!-- image input -->
+                <div class="mb-3">
+                    <label for="imageInput" class="form-label">Image URL</label>
+                    <input type="text" id="imageInput" class="form-control" placeholder="please enter your Image URL">
+                </div>
+                <!-- submit button -->
+                <br>
+                <input type="submit" value="Submit" class="btn btn-warning">
+            </fieldset>
+        </form>
     </div>
+
+    <!-- =========== Employee Card ============= -->
+    <div class="container">
+        <section id="cardContainer" class="cardContainer">
+
+        </section>
+    </div>
+
 
     <!-- ========= Footer ===========-->
 
-    <footer class="fixed-bottom text-center text-lg-start">
+    <footer class="text-center text-lg-start bg-dark text-white">
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2020 Copyright
+            © 2024 Copyright
         </div>
         <!-- Copyright -->
     </footer>
