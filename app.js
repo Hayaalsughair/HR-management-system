@@ -41,7 +41,8 @@
     //     newRow.innerHTML = `<td>${this.id}</td><td>${this.Fname}</td><td>${this.department}</td><td>${this.level}</td><td>${this.salary}</td>`;
     //     tableBody.appendChild(newRow);
     // }
-
+    //show in the card static card
+    
     // let employee1 = new Employee(1000, "Ghazi Samer", "Administration", "Senior");
     // let employee2 = new Employee(1001, "Lana Ali", "Finance", "Senior");
     // let employee3 = new Employee(1002, "Tamara Ayoub", "Marketing", "Senior");
@@ -68,7 +69,6 @@
     //         allEmployee[i].render();
     //     }
     // }
-    'use strict';
 
     let allEmployee = [];
     let sectionEl = document.getElementById("cardContainer");
