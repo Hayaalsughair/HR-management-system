@@ -34,7 +34,59 @@
             </div>
         </div>
     </nav>
+             
+                 <!-- Accounting Table -->
+                 <h1>Accounting Page</h1>
 
+                 <!-- Table to display department information -->
+                 <table id="departmentTable">
+                     <thead>
+                         <tr>
+                             <th>Department</th>
+                             <th>Number of Employees</th>
+                             <th>Total Salary</th>
+                             <th>Average Salary</th>
+                         </tr>
+                     </thead>
+                     <tbody id="departmentTableBody">
+                         <!-- Departments information will be added dynamically here -->
+
+                         <tr>
+                            <td>Administration</td>
+                            <td id="numofadmin"></td>
+                             <td id="totaladmin"></td>
+                             <td id="avadmin"></td>
+                         </tr>
+                         <tr>
+                            <td>Marketing</td>
+                            <td id="numofmark"></td>
+                            <td id="totalmark"></td>
+                            <td id="avmark"></td>
+                         </tr>
+                         <tr>
+                            <td>Development</td>
+                            <td id="numofdev"></td>
+                            <td id="totaldev"></td>
+                            <td id="avdev"></td>
+                         </tr>
+                         <tr>
+                            <td>Finance</td>
+                            <td id="numoffin"></td>
+                            <td id="totalfin"></td>
+                            <td id="avfin"></td>
+                         </tr>
+
+                         <tr>
+                            <td>Total</td>
+                            <td id="allnum"></td>
+                            <td id="allsal"></td>
+                            <td id="allav"></td>
+                          </tr>
+
+                        </tbody>
+                 </table>
+             
+                
       <!-- ========= Footer ===========-->
 
       <footer class="fixed-bottom text-center text-lg-start bg-dark text-white">
@@ -44,6 +96,6 @@
         </div>
         <!-- Copyright -->
     </footer>
-
+ <script src="accounting.js"></script>
 </body>
 </html>

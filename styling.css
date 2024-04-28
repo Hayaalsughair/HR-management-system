@@ -1,37 +1,99 @@
-
+/* 
 body {
-    background-color: rgba(242, 242, 242, 0.393);
+    background-color: rgba(206, 206, 206, 0.393);
     font-family: "Ubuntu", sans-serif;
 
 }
 .navbar{
-
+    margin-top: 10px;
     margin-bottom: 20px;
  
  
 }
 .navbar-brand{
     margin-left: 25px;
-}
+}*/
 .tableContent{
     margin: 50px;
     border-radius: 50PX;
 
 }
- th {
-    color:#FFCA2C; /* Change the color as needed */
-}
 
 table {
     width: 100%;
-    border-collapse: collapse;
     margin-bottom: 20px;
 }
 th, td {
-    border: 1px solid #dddddd;
+    border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
 }
 th {
-    background-color: #f2f2f2;
+    background-color: #ffca2c3c;
+} 
+
+body{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.employeeForm{
+    font-weight: 500;
+    color: #FFCA2C;
+}
+.form-label{
+    font-weight: 500;
+}
+.container{
+    padding: 20px;
+    margin-top: 80px;
+}
+
+/* Employee card container */
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px ;
+}
+
+/* Employee card */
+.employeeCard {
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Employee image */
+.employeeImage {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Employee details */
+.employeeDetails {
+    font-size: 16px;
+}
+
+/* Employee name */
+.employeeName {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Employee department and level */
+.employeeDepartment,
+.employeeLevel {
+    margin-bottom: 5px;
+}
+
+/* Employee ID */
+.employeeID {
+    font-size: 14px;
+    color: #666;
 }
